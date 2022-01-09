@@ -1,0 +1,10 @@
+{
+  "short_name": "10xit Demo",
+  "name": "Mint NFTs",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
