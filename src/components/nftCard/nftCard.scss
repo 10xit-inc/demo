@@ -1,0 +1,122 @@
+@import "/src/styles/colors";
+
+.nft-container {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .width-control {
+      width: 500px;
+      @media screen and (max-width: 600px) {
+        width: 300px;
+      }
+      .pic-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          border: 1px solid lightgrey;
+          width: 100%;
+          background: #fff;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+      }
+
+      .info-container {
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          border-radius: 5px;
+          background: $color-10xit;
+          white-space: nowrap;
+          padding: 12px 30px;
+          color: #fff;
+          font-size: 16px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.2s ease-in-out;
+          text-decoration: none;
+          font-weight: 500;
+
+          &:hover {
+            transition: all 0.2s ease-in-out;
+            transform: scale(1.04);
+          }
+
+          &:focus {
+            outline: 1px dashed $color-10xit;
+          }
+        }
+      }
+    }
+  }
+}
+
+// export const InfoContainer = styled.div`
+
+// `
+
+// export const ExpandedContainer = styled.div`
+//     padding-top: 5px;
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+//     align-items: center;
+
+//     @media screen and (max-width: 768px) {
+//         grid-template-columns: 1fr;
+//     }
+// `
+
+// export const ButtonsContainer = styled.div`
+//     display: flex;
+//     justify-content: flex-end;
+//     flex-wrap: wrap;
+
+//     @media screen and (max-width: 600px) {
+//         justify-content: center;
+//     }
+// `
+// export const NameContainer = styled.div`
+//     min-height: 5vw;
+//     display: flex;
+//     align-items: center;
+// `
+
+// export const NameH1 = styled.h1`
+//     font-size: 1.6rem;
+//     font-weight: 400;
+//     color: #000;
+
+//     @media screen and (max-width: 480px) {
+//         font-size: 1.2rem;
+//     }
+// `
+
+// export const InfoH2 = styled.h2`
+//     font-size: 1.2rem;
+//     color: #1a2071;
+//     opacity: 0.6;
+//     font-weight: 300;
+//     margin-bottom: 5px;
+
+//     @media screen and (max-width: 550px) {
+//         font-size: 0.7rem;
+//     }
+// `

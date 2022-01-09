@@ -1,0 +1,31 @@
+@import "/src/styles/colors";
+
+button {
+  border-radius: 5px;
+  background: $color-10xit;
+  white-space: nowrap;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:disabled {
+    background: lightgrey;
+    transition: none;
+  }
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.04);
+  }
+  &:focus {
+    outline: 1px dashed $color-10xit;
+  }
+}
