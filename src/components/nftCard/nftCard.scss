@@ -18,6 +18,9 @@
       @media screen and (max-width: 600px) {
         width: 300px;
       }
+      h2 {
+        color: #fff;
+      }
       .pic-container {
         width: 100%;
         display: flex;
@@ -26,9 +29,12 @@
         img {
           border: 1px solid lightgrey;
           width: 100%;
-          background: #fff;
+          background: linear-gradient(-90deg, #e9e9e9, #929292);
+          background-size: 400% 400%;
+          animation: gradient 5s ease infinite;
           border-radius: 5px;
           object-fit: cover;
+          min-height: 100px;
         }
       }
 
@@ -40,10 +46,10 @@
 
         a {
           border-radius: 5px;
-          background: $color-10xit;
+          background: #fff;
           white-space: nowrap;
           padding: 12px 30px;
-          color: #fff;
+          color: $color-10xit;
           font-size: 16px;
           outline: none;
           border: none;

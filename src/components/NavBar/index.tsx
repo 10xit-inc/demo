@@ -26,7 +26,7 @@ const NavBar = (props: Props) => {
       <nav className={scrollNav ? "scroll-nav" : ""}>
         <div className="nav-container">
           <LinkS className="nav-logo" to="/" onClick={toggleHome}>
-            <img src="../../assets/logo.svg" />
+            <img src="../../demo/assets/logo.png" />
           </LinkS>
           <div className="nav-button">
             <Button onClick={mintDialog}>Mint</Button>

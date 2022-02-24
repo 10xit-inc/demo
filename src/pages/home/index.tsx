@@ -25,9 +25,12 @@ const Home = () => {
     setLoading(false);
   };
 
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
     <div className="container" id="home">
-      {loading && <Loading />}
       <div className="content">
         <div className="list">
           {nfts
