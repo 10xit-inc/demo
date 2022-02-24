@@ -29,7 +29,9 @@ const NavBar = (props: Props) => {
             <img src="../../demo/assets/logo.png" />
           </LinkS>
           <div className="nav-button">
-            <Button onClick={mintDialog}>Mint</Button>
+            <Button onClick={mintDialog} backgroundColor="#fff" color="#2834DA">
+              Mint
+            </Button>
           </div>
         </div>
       </nav>
