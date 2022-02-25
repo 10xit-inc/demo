@@ -7,7 +7,7 @@ interface Props {
 
 function NFTCard(props: Props) {
   const { nft } = props;
-  const image = nft.metadata["image"].split('/');
+  const image = nft.metadata["image"].split("/");
 
   return (
     <div className="nft-container">
@@ -18,9 +18,21 @@ function NFTCard(props: Props) {
           </div>
           <div className="info-container">
             <h2>{nft.metadata["name"] ?? "NFT"}</h2>
-            <a  target="_blank" href={nft.openseaUrl} rel="noreferrer">
-            OpenSea
-            </a>
+            <div className="buttons-container">
+              <a target="_blank" href={nft.openseaUrl} rel="noreferrer">
+                OpenSea
+              </a>
+              <a
+                target="_blank"
+                href={
+                  "https://mumbai.polygonscan.com/tx/" + nft.transactionHash
+                }
+                rel="noreferrer"
+                style={{ margin: "0px" }}
+              >
+                Polygon Scan
+              </a>
+            </div>
           </div>
         </div>
       </div>
